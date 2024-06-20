@@ -1,0 +1,21 @@
+helm search hub <package_name>--------> to search the package
+helm repo add myrepo <repo_url>----------->to add chart into the repo
+helm repo list------------> to list chart repository
+helm search repo <repo_name/ package_name>---------> to list existing repo 
+helm repo update------------> to update the repos
+helm show chart myrepo1/httpd---------->to view details of perticular helm chart
+helm install myrepo1/wordpress --generate-name-------------->to install a particular chart where pods, deployments, rs, services, statefulsets will be created.
+helm status  wordpress-1718868370-----------------> to see status of the chart
+helm uninstall wordpress-1718868370----------------> to uninstall the chart
+
+===============To create helm chart manually==========================
+helm search repo mysql
+helm install myrepo1/mysql --generate-name
+helm create kucl-chart-------------------> to create chart manually
+ls
+cat kucl-chart/
+cd kucl-chart/
+ls
+tree---------------------> to see structure of the directory
+apt install tree
+
