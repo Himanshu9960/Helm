@@ -2,7 +2,7 @@ helm search hub <package_name>--------> to search the package
 helm repo add myrepo <repo_url>----------->to add chart into the repo
 helm repo list------------> to list chart repository
 helm search repo <repo_name/ package_name>---------> to list existing repo 
-helm repo update------------> to update the repos
+helm repo update------------> to update all the repos
 helm show chart myrepo1/httpd---------->to view details of perticular helm chart
 helm install myrepo1/wordpress --generate-name-------------->to install a particular chart where pods, deployments, rs, services, statefulsets will be created.
 helm status  wordpress-1718868370-----------------> to see status of the chart
@@ -19,3 +19,95 @@ ls
 tree---------------------> to see structure of the directory
 apt install tree
 
+helm install myrepo1/wordpress --dry-run --debug --generate-name------------> to install the chart and generate yaml file of it
+
+helm install myrepo1/wordpress --namespace <namespace_name>
+helm install  myrepo1/wordpress --generate-name --namespace myname1
+helm list --all-namespaces-----------------------------------------------> to list all namespaces in helm
+helm env------------------> lists all env's in the helm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+history
+helm
+    5  helm search repo wordpress
+    6  helm search hub wordpress
+    7  helm repo add myrepo1 https://charts.bitnami.com/bitnami
+    8  helm repo list
+    9  helm search repo myrepo1
+   10  helm repo list
+   11  helm search chart myrepo1
+   13  helm show chart myrepo1/wordpress
+   15  helm install  myrepo1/wordpress --generate-name
+   16  kubectl get all
+   17  k get pods all
+   18  k get pods 
+   19  helm list
+   20  k get pods
+   21  helm verify wordpress-1718868370-7db5f8589c-wmqnt
+   22  helm verify wordpress-1718868370
+   23  helm verify chart wordpress-1718868370
+   24  helm show chart myrepo1/wordpress
+   25  helm verify chart wordpress-1718868370
+   26  helm verify --help
+   27  helm --verify chart wordpress-1718868370
+   28  helm status  wordpress-1718868370
+   29  helm uninstall wordpress-1718868370
+   30  k get all
+   31  helm search repo mysql
+   32  helm install myrepo1/mysql --generate-name
+   33  helm create kucl-chart
+   34  ls
+   35  cat kucl-chart/
+   36  cd kucl-chart/
+   37  ls
+   38  tree
+   39  apt install tree
+   40  tree
+   41  history
+   42  ls -la
+   43  pwd
+   44  cd 
+   45  cd ~
+   46  ls -la
+   47  cd .config/
+   48  ls
+   49  cd helm
+   50  ls
+   51  cat repositories.lock 
+   52  cat repositories.yaml 
+   53  cd ~
+   54  cd .local/share/
+   55  ls
+   56  helm repo list
+   57  history
+   58  helm repo list
+   59  helm show chart myrepo1/wordpress
+   60  helm install myrepo1/wordpress --dry-run --debug
+   61  helm install myrepo1/wordpress --dry-run --debug --generate-name
+   62  ls
+   63  helm uninstall myrepo1/wordpress
+   64  helm repo list 
+   65  helm uninstall myrepo1
+   66  history
